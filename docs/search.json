@@ -1,0 +1,199 @@
+[
+  {
+    "objectID": "profesores.html",
+    "href": "profesores.html",
+    "title": "Profesores",
+    "section": "",
+    "text": "ReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados."
+  },
+  {
+    "objectID": "instalacion_configuracion.html#verificación-de-la-instalación-de-r-y-rstudio",
+    "href": "instalacion_configuracion.html#verificación-de-la-instalación-de-r-y-rstudio",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Verificación de la Instalación de R y RStudio",
+    "text": "Verificación de la Instalación de R y RStudio\nSi ya has instalado R y RStudio, puede que te preguntes si es necesario seguir los pasos de una nueva instalación. Antes de tomar una decisión, es crucial verificar que tu instalación actual esté completa y actualizada. A menudo, durante la instalación inicial, se pueden pasar por alto algunos componentes esenciales. Aquí te ofrecemos una guía para confirmar si tu instalación cumple con los requisitos necesarios.\n\nPara usuarios de Windows:\n\nConfirma que la versión de R sea superior a 4.1.\nAsegúrate de que RStudio esté actualizado a la última versión.\nVerifica si tienes instalado RTools, un componente esencial para el desarrollo.\nVerifica si tienes instalado quarto en una versión superior o igual a la 1.4\n\n\n\nPara usuarios de Mac:\n\nComprueba que la versión de R sea superior a 4.1.\nRStudio debe estar actualizado a su última versión.\nVerifica si tienes instalado quarto en una versión superior o igual a la 1.4\n\nAdemás, para los usuarios de Mac, la instalación requiere pasos adicionales para garantizar la correcta funcionalidad de todos los paquetes. Asegúrate de tener instaladas las siguientes librerías del sistema:\n\ngfortran\ngcc\nxcode\n\nSi tras esta verificación encuentras que tu sistema no cumple con alguno de estos requisitos, o tienes dudas, te recomendamos seguir los pasos de instalación nuevamente para asegurar un entorno de trabajo óptimo con R y RStudio.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
+  },
+  {
+    "objectID": "instalacion_configuracion.html#instalación-de-r-y-rstudio-en-windows",
+    "href": "instalacion_configuracion.html#instalación-de-r-y-rstudio-en-windows",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Instalación de R y RStudio en Windows",
+    "text": "Instalación de R y RStudio en Windows",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
+  },
+  {
+    "objectID": "instalacion_configuracion.html#instalación-de-r-y-rstudio-en-mac",
+    "href": "instalacion_configuracion.html#instalación-de-r-y-rstudio-en-mac",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Instalación de R y RStudio en Mac",
+    "text": "Instalación de R y RStudio en Mac",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
+  },
+  {
+    "objectID": "instalacion_configuracion.html#solicitar-asistencia-tecnica",
+    "href": "instalacion_configuracion.html#solicitar-asistencia-tecnica",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Solicitar asistencia tecnica",
+    "text": "Solicitar asistencia tecnica\nEntendemos que enfrentarse a problemas durante la instalación y configuración de equipos tecnológicos puede resultar particularmente frustrante, especialmente si no te consideras una persona muy técnica. Sin embargo, queremos asegurarte que no estás solo en este proceso y estamos aquí para brindarte el apoyo necesario.\nPara ayudarte a superar estos desafíos y completar el proceso con éxito, te invitamos a agendar una reunión virtual a través de Zoom con uno de nuestros instructores. Ellos te guiarán paso a paso, asegurándose de que tu equipo quede configurado correctamente y listo para usar.\nHaz clic en el siguiente enlace para programar tu reunión y comenzar tu camino hacia una experiencia tecnológica sin estrés.\nProgramar una reunión",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "Pregutnas Frecuentes",
+    "section": "",
+    "text": "Somos una organización que busca hacer accesible el aprendizaje del lenguaje R a profesionales, académicos y estudiantes en toda América Latina. Ofrecemos desde cursos gratuitos para que puedas comenzar hasta cursos más avanzados enfocados a profesionales. Ofrecemos descuentos de hasta el 100% para estudiantes de pregrado y miembros de comunidades poco representadas en STEM y personas de países con limitaciones para pagos en línea."
+  },
+  {
+    "objectID": "codigo_conducta.html",
+    "href": "codigo_conducta.html",
+    "title": "Código de conducta",
+    "section": "",
+    "text": "Nos comprometemos a ofrecer un ambiente educativo seguro y acogedor para todos, sin importar su experiencia, identidad o conocimiento. Este Código de Conducta, fuertemente inspirado por el código de conducta de The Software Carpentries, establece nuestras expectativas para todos los participantes de nuestro curso en línea, así como las consecuencias para comportamientos inaceptables.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#reporte-de-incidentes",
+    "href": "codigo_conducta.html#reporte-de-incidentes",
+    "title": "Código de conducta",
+    "section": "Reporte de Incidentes",
+    "text": "Reporte de Incidentes\n\nLos incidentes deben reportarse a través de un formulario anónimo, garantizando la privacidad y seguridad de quien reporta.\nCada reporte será tratado con seriedad y confidencialidad.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#comportamiento-esperado",
+    "href": "codigo_conducta.html#comportamiento-esperado",
+    "title": "Código de conducta",
+    "section": "Comportamiento Esperado",
+    "text": "Comportamiento Esperado\n\nUtilizar un lenguaje inclusivo y respetuoso.\nRespetar distintas opiniones y experiencias.\nRecibir y dar críticas constructivas de manera positiva.\nPriorizar el bienestar de la comunidad educativa.\nActuar con cortesía y respeto hacia todos.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#comportamiento-inaceptable",
+    "href": "codigo_conducta.html#comportamiento-inaceptable",
+    "title": "Código de conducta",
+    "section": "Comportamiento Inaceptable",
+    "text": "Comportamiento Inaceptable\nCualquier forma de acoso, discriminación o intimidación, incluyendo pero no limitado a:\n\nComentarios ofensivos relacionados con género, orientación sexual, discapacidad, apariencia física, tamaño corporal, raza, religión.\nAmenazas o insultos.\nAtención sexual indeseada o imágenes de contenido sexual.\nInterrupción persistente de las sesiones o comunicaciones.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#consecuencias",
+    "href": "codigo_conducta.html#consecuencias",
+    "title": "Código de conducta",
+    "section": "Consecuencias",
+    "text": "Consecuencias\n\nLos participantes que violen estas reglas serán expulsados del curso sin derecho a reembolso.\nSe les prohibirá la participación en futuras actividades presenciales y en línea.\n\nNos dedicamos a crear un entorno de aprendizaje positivo y enriquecedor para todos. Esperamos que todos los participantes colaboren para asegurar una experiencia educativa segura y respetuosa.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introducción a ggplot2 y shiny",
+    "section": "",
+    "text": "¡Hola y bienvenidos a nuestro taller intensivo de 2 semanas sobre visualización de datos con ggplot2 y Shiny! Estoy muy emocionado de tenerte aquí y de acompañarte en este viaje de aprendizaje."
+  },
+  {
+    "objectID": "obtener_ayuda.html",
+    "href": "obtener_ayuda.html",
+    "title": "Obtener Ayuda",
+    "section": "",
+    "text": "💡 Necesitas ayuda, es normal. Estos no son temas sencillos y a todos nos tomó varios intentos hasta poder comprenderlos.\n¿Qué te parece si practicamos? En el botón puedes acceder a mi calendario privado y programar una sesión de Zoom. 🗓️ Ahí puedes contarme en qué estás trabajando y veremos cómo puedo ayudarte a resolver tus dudas.\n📅 La sesión de consulta es individual, tiene una duración de 45 minutos y se realiza por Zoom.\nProgramar una reunión\n📱 Si tu consulta es muy corta y no requiere ver código o compartir pantalla, puedes escribirme por WhatsApp.\nEscribir a Whatsapp\n\n🚨 Si necesitas reportar algún incidente, puedes hacerlo en el siguiente enlace: https://tally.so/r/3EP4r2.\n🛡️ Estamos comprometidos a ofrecer un ambiente educativo seguro y acogedor para todos. Tu reporte será manejado con la mayor confidencialidad y seriedad para asegurar un entorno respetuoso y libre de inconvenientes.\n\n\n\nReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados."
+  },
+  {
+    "objectID": "clases/index.html",
+    "href": "clases/index.html",
+    "title": "Ciencia de datos con R",
+    "section": "",
+    "text": "parte 1\n\n\nparte 2\n\n\nparte 3\n(Wickham 2014)\n\n\n\n\n\nReferencias\n\nWickham, Hadley. 2014. «Tidy Data». Journal of Statistical Software 59 (10). https://doi.org/10.18637/jss.v059.i10.\n\nReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Presentación"
+    ]
+  },
+  {
+    "objectID": "faq.html#qué-es-aprende-tidyverse",
+    "href": "faq.html#qué-es-aprende-tidyverse",
+    "title": "Pregutnas Frecuentes",
+    "section": "",
+    "text": "Somos una organización que busca hacer accesible el aprendizaje del lenguaje R a profesionales, académicos y estudiantes en toda América Latina. Ofrecemos desde cursos gratuitos para que puedas comenzar hasta cursos más avanzados enfocados a profesionales. Ofrecemos descuentos de hasta el 100% para estudiantes de pregrado y miembros de comunidades poco representadas en STEM y personas de países con limitaciones para pagos en línea."
+  },
+  {
+    "objectID": "faq.html#cómo-puedo-ver-la-grabación",
+    "href": "faq.html#cómo-puedo-ver-la-grabación",
+    "title": "Pregutnas Frecuentes",
+    "section": "¿Cómo puedo ver la grabación?",
+    "text": "¿Cómo puedo ver la grabación?\nLa grabación de las sesiones te llegará de forma automática a WhatsApp una vez terminada la clase, junto con un resumen de los temas vistos. Recuerda descargar los materiales ya que solamente estarán en línea por 7 días."
+  },
+  {
+    "objectID": "faq.html#no-tengo-computadora-puedo-participar",
+    "href": "faq.html#no-tengo-computadora-puedo-participar",
+    "title": "Pregutnas Frecuentes",
+    "section": "No tengo computadora, ¿puedo participar?",
+    "text": "No tengo computadora, ¿puedo participar?\nLas clases y prácticas están diseñadas para ser vistas desde una computadora. Si por algún motivo debes asistir desde un dispositivo móvil o una tablet, por favor contacta al instructor vía WhatsApp en https://wa.me/50683725899 para que lo tome en cuenta a la hora de formar grupos de trabajo."
+  },
+  {
+    "objectID": "faq.html#puedo-proponer-ejercicios-o-cambios",
+    "href": "faq.html#puedo-proponer-ejercicios-o-cambios",
+    "title": "Pregutnas Frecuentes",
+    "section": "¿Puedo proponer ejercicios o cambios?",
+    "text": "¿Puedo proponer ejercicios o cambios?\n¡Claro! Siempre estamos abiertos a modificaciones y propuestas. Si tienes algún dataset en mente, coméntalo con el instructor por WhatsApp https://wa.me/50683725899 o al email info@aprendetidyverse.com y lo evaluaremos para agregar en las siguientes sesiones."
+  },
+  {
+    "objectID": "faq.html#dan-algún-certificado",
+    "href": "faq.html#dan-algún-certificado",
+    "title": "Pregutnas Frecuentes",
+    "section": "¿Dan algún certificado?",
+    "text": "¿Dan algún certificado?\nEste taller incluye un certificado de participación, emitido por la plataforma certifier y compatible con LinkedIn. Para poder acceder a este, debes participar al menos 4 de las 6 horas del taller en vivo."
+  },
+  {
+    "objectID": "index.html#objetivos-del-taller",
+    "href": "index.html#objetivos-del-taller",
+    "title": "Introducción a ggplot2 y shiny",
+    "section": "Objetivos del Taller",
+    "text": "Objetivos del Taller\nEl principal objetivo de este taller es proporcionarte las herramientas y conocimientos necesarios para crear visualizaciones de datos efectivas y aplicaciones interactivas utilizando ggplot2 y Shiny. Al finalizar el taller, deberías sentirte cómodo con:\n\nComprender la estructura y lógica de un gráfico en ggplot2: Desarrollar una sólida comprensión de cómo funciona ggplot2 y cómo utilizarlo para crear gráficos diversos como gráficos de barras, líneas, puntos, boxplots e histogramas.\nConceptos básicos de teoría del color para visualización de datos: Aprender a aplicar teoría del color para mejorar la estética y la legibilidad de tus gráficos.\nDesarrollo de mapas: Crear mapas del mundo y mapas específicos de Costa Rica utilizando ggplot2.\nIntroducción a Shiny y sus componentes esenciales: Comprender la estructura de una aplicación Shiny y cómo utilizar inputs, outputs, renders, reactiveValues, eventReactive, observers, entre otros.\nEntender el concepto de reactividad: Dominar cómo funciona la reactividad en Shiny y cómo aprovecharla para crear aplicaciones interactivas.\nCrear un diagrama de funcionamiento de una app con Shiny: Aprender a esquematizar el flujo y funcionamiento de una aplicación Shiny.\nDesplegar una aplicación Shiny en shinyapps.io: Adquirir las habilidades necesarias para poner en línea tus aplicaciones Shiny y compartirlas con el mundo."
+  },
+  {
+    "objectID": "index.html#sobre-el-instructor",
+    "href": "index.html#sobre-el-instructor",
+    "title": "Introducción a ggplot2 y shiny",
+    "section": "Sobre el Instructor",
+    "text": "Sobre el Instructor\n\n\n\n\n\n👋 Hola, soy Carlos Aguero. Soy ingeniero en sistemas de información y, desde 2016, me dedico a enseñar a personas de todas las áreas y niveles de formación a programar en R.\n📚 Formo parte del listado de instructores certificados por RStudio, enfocándome en Tidyverse y Shiny. En diciembre de 2023, tuve el gusto de unirme a los instructores de la organización Software Carpentry.\n\n\n🚀 Actualmente, tengo mi propio proyecto llamado Aprende Tidyverse, donde buscamos ayudar a todos a aprender R y Tidyverse de forma sencilla y a su ritmo."
+  }
+]
