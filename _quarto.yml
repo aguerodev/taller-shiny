@@ -13,7 +13,7 @@ website:
       - text: "Inicio"
         file: index.qmd
       - text: "Lecciones"
-        file: clases/index.qmd
+        file: instalacion_configuracion.qmd
       - text: "Código de conducta"
         file: codigo_conducta.qmd
       - text: "Obtener Ayuda"
@@ -25,16 +25,19 @@ website:
       title: "Clases"
       style: "docked"
       background: light
-      collapse-level: 2
+      collapse-level: 3
       contents:
         - section: "Antes de comenzar"
           contents:
-            - text: "Presentación"
-              href: clases/index.qmd
             - text: "Instalación y configuración"
               href: instalacion_configuracion.qmd
-            - text: "Código de Conducta"
-              href: codigo_conducta.qmd
+        - text: "---"
+        - section: "Semana 1"
+          contents:
+          - text: "Gramática de los gráficos"
+            href: clases/01_gramatica_graficos.qmd
+          - text: "Introducción a Shiny"
+            href: clases/02_intro_shiny.qmd
         - text: "---"
 
 author:

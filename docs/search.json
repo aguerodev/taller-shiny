@@ -140,12 +140,7 @@
     "href": "clases/index.html",
     "title": "Ciencia de datos con R",
     "section": "",
-    "text": "parte 1\n\n\nparte 2\n\n\nparte 3\n(Wickham 2014)\n\n\n\n\n\nReferencias\n\nWickham, Hadley. 2014. «Tidy Data». Journal of Statistical Software 59 (10). https://doi.org/10.18637/jss.v059.i10.\n\nReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados.",
-    "crumbs": [
-      "Lecciones",
-      "Antes de comenzar",
-      "Presentación"
-    ]
+    "text": "parte 1\n\n\nparte 2\n\n\nparte 3\n(Wickham 2014)\n\n\n\n\n\nReferencias\n\nWickham, Hadley. 2014. «Tidy Data». Journal of Statistical Software 59 (10). https://doi.org/10.18637/jss.v059.i10.\n\nReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados."
   },
   {
     "objectID": "faq.html#qué-es-aprende-tidyverse",
@@ -195,5 +190,233 @@
     "title": "Introducción a ggplot2 y shiny",
     "section": "Sobre el Instructor",
     "text": "Sobre el Instructor\n\n\n\n\n\n👋 Hola, soy Carlos Aguero. Soy ingeniero en sistemas de información y, desde 2016, me dedico a enseñar a personas de todas las áreas y niveles de formación a programar en R.\n📚 Formo parte del listado de instructores certificados por RStudio, enfocándome en Tidyverse y Shiny. En diciembre de 2023, tuve el gusto de unirme a los instructores de la organización Software Carpentry.\n\n\n🚀 Actualmente, tengo mi propio proyecto llamado Aprende Tidyverse, donde buscamos ayudar a todos a aprender R y Tidyverse de forma sencilla y a su ritmo."
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html",
+    "href": "clases/01_gramatica_graficos.html",
+    "title": "Visualización de datos con ggplot2",
+    "section": "",
+    "text": "El paquete ggplot2 es quizá el más querido por la comunidad de usuarios de R. Aunque al inicio puede desesperarnos que nada funcione, esto casi siempre se resuelve cuando tomamos el tiempo de ver un poco de la teoría que hay detrás de ese paquete.\nEn este taller, nuestro objetivo es aclarar estos conceptos y ayudarte a crear gráficos funcionales y, ¿por qué no?, bonitos🎨.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html#capa-de-datos",
+    "href": "clases/01_gramatica_graficos.html#capa-de-datos",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Capa de datos",
+    "text": "Capa de datos\nEsta capa no muestra nada; veremos que aparece un rectángulo gris, pero su función es indicarle a ggplot dónde debe buscar los datos cuando mencionemos el nombre de alguna variable en el mapeo.\n\nggplot(\n  data = pinguinos\n)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html#mapeo",
+    "href": "clases/01_gramatica_graficos.html#mapeo",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Mapeo",
+    "text": "Mapeo\nEsta es quizá la parte más importante de nuestro gráfico. Wilke (2019) nos explica que el mapeo es un proceso de traducción en el que convertimos variables de nuestra tabla, casi siempre números y categorías, en atributos como la posición (x, y), el color, la forma o el tamaño de un elemento.\n\nPara indicar el mapeo, utilizamos el parámetro mapping y le pasamos una aes (abreviatura de “aesthetic”, que en español se traduce como “estética”). Este término puede ser problemático porque podría sugerir que se refiere únicamente a la apariencia visual del gráfico. Sin embargo, en este contexto, “estética” se refiere a los atributos fundamentales que conforman un gráfico, como la posición (x, y), el color, la forma o el tamaño de los elementos.\nEn el ámbito del arte, la estética se ocupa de las propiedades que hacen que una obra de arte sea significativa y apreciable, más allá de su mera apariencia visual. Del mismo modo, en ggplot2, la estética se centra en cómo se representan los datos de manera que sean comprensibles y efectivos, no solo en cómo se ven.\nPor ejemplo, en nuestro caso, la variable largo_pico_mm, que es una variable numérica en nuestra tabla, en nuestro gráfico se va a representar como la posición de los elementos en el eje x, y el alto_pico_mm pasará a representarse como la posición de los elementos en el eje y. Estamos traduciendo números de la tabla a ubicaciones, posiciones, en el espacio del gráfico. En esto consiste el mapeo.\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm\n  )\n)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html#grámatica-de-los-gráficos",
+    "href": "clases/01_gramatica_graficos.html#grámatica-de-los-gráficos",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Grámatica de los gráficos",
+    "text": "Grámatica de los gráficos\nWilkinson (2005) creó la gramática de los gráficos para explicar las características básicas de todos los gráficos estadísticos. Esta gramática responde a la pregunta: ¿qué es un gráfico estadístico? ggplot2 Wickham (2010) se basa en esta gramática, destacando la importancia de las capas y adaptándola para usar en R. Básicamente, la gramática nos dice que un gráfico conecta los datos con atributos estéticos (color, forma, tamaño) de objetos geométricos (puntos, líneas, barras). El gráfico también puede incluir transformaciones estadísticas de los datos e información sobre el sistema de coordenadas del gráfico. Además, se puede usar el facetado para graficar diferentes subconjuntos de datos. La combinación de todos estos elementos es lo que crea un gráfico.\n\n\n\n\n\nflowchart TB\n    A[Estructura de ggplot2] --&gt; B[Datos]\n\n    A --&gt; C[Mapeo Estético]\n\n    A --&gt; D[Geometrías]\n\n    A --&gt; E[Facetas]\n\n    A --&gt; F[Escalas]\n\n    A --&gt; G[Coordenadas]\n\n    A --&gt; H[Temas]\n\n    A --&gt; I[Etiquetas y Leyendas]\n\n\n\n\n\n\n\nImagina la estructura de ggplot2 como si fueran piezas de Lego que tenemos que ensamblar para construir algo. En este caso, la primera pieza, la base, sería nuestra capa de datos.\nPara este ejemplo, utilizaremos la tabla pinguinos del paquete datos, una alternativa algo más bonita al clásico dataset “iris”.\n\npinguinos &lt;- datos::pinguinos\nglimpse(pinguinos)\n\nRows: 344\nColumns: 8\n$ especie         &lt;fct&gt; Adelia, Adelia, Adelia, Adelia, Adelia, Adelia, Adelia…\n$ isla            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgersen,…\n$ largo_pico_mm   &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, 42…\n$ alto_pico_mm    &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, 20…\n$ largo_aleta_mm  &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186, …\n$ masa_corporal_g &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, 42…\n$ sexo            &lt;fct&gt; macho, hembra, hembra, NA, hembra, macho, hembra, mach…\n$ anio            &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, …\n\n\n\nEste dataset contiene medidas del alto y largo del pico, peso, sexo y especie de pingüinos de la Antártida.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html#geometrías",
+    "href": "clases/01_gramatica_graficos.html#geometrías",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Geometrías",
+    "text": "Geometrías\nSi nuestro gráfico fuera una construcción, digamos una casa, los datos y el mapeo serían los planos. Pero ahora toca ponerse manos a la obra para construir. Ese es el rol de las geometrías. Estas son las encargadas de dibujar los puntos, barras, líneas o cualquier otro elemento que veamos en el gráfico.\n\nLas geometrías ya saben qué colores, posiciones y tamaños usar porque se los indicamos en el mapeo, ya vienen en los planos de la casa. Y así como hay albañiles, electricistas y plomeros, cada geom se especializa en construir un tipo de gráfico. Entre los más comunes están:\n\ngeom_point: gráfico de puntos (dispersión)\ngeom_bar/geom_col: gráficos de barras\ngeom_line: gráficos de líneas\ngeom_histogram: histogramas\n\nEn ggplot2.tidyverse.org, puedes encontrar una lista gigante de todas las geometrías que podemos utilizar, pero por ahora, con estos tenemos más que suficiente.\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm\n  )\n) +\n  geom_point()\n\n\n\n\n\n\n\n\nSi alguna vez has hecho reparaciones en la casa, sabes que siempre al final alguien quiere algún cambio. Así que ahora yo quiero que mis puntos tengan colores, pero no cualquiera; quiero que el color dependa de la especie del pingüino. Como lo que queremos es que se tomen datos de la tabla para representarlos en el gráfico, debemos colocar esto en el mapping.\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n  )\n) +\n  geom_point()",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html#etiquetas",
+    "href": "clases/01_gramatica_graficos.html#etiquetas",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Etiquetas",
+    "text": "Etiquetas\nLas formas y los colores no son suficientes para dejar todo claro. Es por eso que todo gráfico que se precie de profesional debe llevar texto que lo acompañe: un título, subtítulo y una fuente.\nTodos estos los vamos a colocar en una capa llamada labs().\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  )\n\n\n\n\n\n\n\n\nAunque podemos encontrar en Estadística y Censos (INEC) (2017) una muy buena guía de cómo debemos redactar estos títulos y subtítulos para presentar gráficos estadísticos, para los términos del taller vamos a ser más “informales”. Sin embargo, vale mucho la pena revisarla.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html#escalas",
+    "href": "clases/01_gramatica_graficos.html#escalas",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Escalas",
+    "text": "Escalas\nAl inicio te comentaba que todos aman a ggplot2. Esto se debe a que cosas que antes teníamos que hacer a mano con el paquete graphics, ahora las podemos hacer de forma casi mágica🪄. El paquete decide por nosotros aspectos como los colores a usar, las divisiones de los ejes y muchas otras cosas.\nA medida que avanzamos, comenzamos a ponernos más exigentes con estos detalles y la primera duda que siempre surge es: “💬 Ok, pero esos colores no me gustan, ¿puedo poner otros?”\nCuando queremos modificar algo que ggplot2 ha seleccionado por nosotros, utilizamos las escalas.\nWickham, Navarro, y Pedersen (2024) explican de forma más rigurosa que las escalas controlan el mapeo de datos a atributos estéticos. Transforman tus datos en algo que puedes visualizar, como tamaño, color, posición o forma. Además, proporcionan las herramientas que te permiten interpretar el gráfico, como los ejes y las leyendas. Aunque es posible generar gráficos con ggplot2 sin comprender cómo funcionan las escalas, entenderlas y aprender a manipularlas te dará mucho más control sobre tus gráficos.\nEn este caso, para el color vamos a utilizar la escala scale_color_manual. A esta le indicaremos en el parámetro values los colores que queremos utilizar para nuestro gráfico.\nPara especificar los colores, podemos hacerlo usando el nombre del color. La Universidad de Columbia nos hace el enorme favor de listar los colores por nombre, o podemos especificar el código hexadecimal del color. Suena raro, pero es fácil. En la computadora, los colores se guardan de manera diferente. Para evitar confusiones, cada posible color que genera la pantalla tiene un código único. Estos códigos se ven algo así.\n La pregunta obvia es: ¿y de dónde saco esos códigos? Bueno, puedes buscar en Google “color picker” o utilizar sitios web como Color Hunt, que también pueden ser útiles.\n\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  ) +\n  scale_color_manual(\n    values = c(\"#EF9C66\",\"#C738BD\",\"#3AA6B9\")\n  )",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/01_gramatica_graficos.html#temas",
+    "href": "clases/01_gramatica_graficos.html#temas",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Temas",
+    "text": "Temas\nLos temas son cambios de apariencia que podemos aplicar a los gráficos. Aunque más adelante descubrirás que podemos hacer cosas muy interesantes con los temas, por ahora solo aplicaremos uno: theme_minimal().\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  ) +\n  scale_color_manual(\n    values = c(\"#EF9C66\",\"#C738BD\",\"#3AA6B9\")\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\n\nComo ves, hay bastantes conceptos detrás de un gráfico tan “sencillo” como este. Ahora vamos a practicar directamente en RStudio.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Gramática de los gráficos"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html",
+    "href": "clases/02_intro_shiny.html",
+    "title": "Introducción a Shiny",
+    "section": "",
+    "text": "Shiny es una herramienta que permite a los usuarios de R crear aplicaciones web interactivas sin necesidad de aprender programación web.\nHay un problema común para los analistas: necesitan presentar sus resultados, pero esto a menudo implica aprender tecnologías web como JavaScript, CSS, HTML, React, Vue u otras similares. La otra opción, que no sé si es mejor o peor, es tener que trabajar en conjunto con un desarrollador web que no entiende mucho de datos. Esto termina en decenas de reuniones y horas gastadas en ponerse de acuerdo sobre cómo desarrollar la web.\nEntonces, Winston Chang tuvo una de las ideas más geniales: ¿y si todo esto se pudiera hacer sin salir de RStudio y usando R? Bueno, eso es Shiny: superpoderes de desarrollador web para usuarios de R.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#grámatica-de-los-gráficos",
+    "href": "clases/02_intro_shiny.html#grámatica-de-los-gráficos",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Grámatica de los gráficos",
+    "text": "Grámatica de los gráficos\nWilkinson (2005) creó la gramática de los gráficos para explicar las características básicas de todos los gráficos estadísticos. Esta gramática responde a la pregunta: ¿qué es un gráfico estadístico? ggplot2 Wickham (2010) se basa en esta gramática, destacando la importancia de las capas y adaptándola para usar en R. Básicamente, la gramática nos dice que un gráfico conecta los datos con atributos estéticos (color, forma, tamaño) de objetos geométricos (puntos, líneas, barras). El gráfico también puede incluir transformaciones estadísticas de los datos e información sobre el sistema de coordenadas del gráfico. Además, se puede usar el facetado para graficar diferentes subconjuntos de datos. La combinación de todos estos elementos es lo que crea un gráfico.\n\n\n\n\n\nflowchart TB\n    A[Estructura de ggplot2] --&gt; B[Datos]\n\n    A --&gt; C[Mapeo Estético]\n\n    A --&gt; D[Geometrías]\n\n    A --&gt; E[Facetas]\n\n    A --&gt; F[Escalas]\n\n    A --&gt; G[Coordenadas]\n\n    A --&gt; H[Temas]\n\n    A --&gt; I[Etiquetas y Leyendas]\n\n\n\n\n\n\n\nImagina la estructura de ggplot2 como si fueran piezas de Lego que tenemos que ensamblar para construir algo. En este caso, la primera pieza, la base, sería nuestra capa de datos.\nPara este ejemplo, utilizaremos la tabla pinguinos del paquete datos, una alternativa algo más bonita al clásico dataset “iris”.\n\npinguinos &lt;- datos::pinguinos\nglimpse(pinguinos)\n\nRows: 344\nColumns: 8\n$ especie         &lt;fct&gt; Adelia, Adelia, Adelia, Adelia, Adelia, Adelia, Adelia…\n$ isla            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgersen,…\n$ largo_pico_mm   &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, 42…\n$ alto_pico_mm    &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, 20…\n$ largo_aleta_mm  &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186, …\n$ masa_corporal_g &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, 42…\n$ sexo            &lt;fct&gt; macho, hembra, hembra, NA, hembra, macho, hembra, mach…\n$ anio            &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, …\n\n\n\nEste dataset contiene medidas del alto y largo del pico, peso, sexo y especie de pingüinos de la Antártida.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#capa-de-datos",
+    "href": "clases/02_intro_shiny.html#capa-de-datos",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Capa de datos",
+    "text": "Capa de datos\nEsta capa no muestra nada; veremos que aparece un rectángulo gris, pero su función es indicarle a ggplot dónde debe buscar los datos cuando mencionemos el nombre de alguna variable en el mapeo.\n\nggplot(\n  data = pinguinos\n)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#mapeo",
+    "href": "clases/02_intro_shiny.html#mapeo",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Mapeo",
+    "text": "Mapeo\nEsta es quizá la parte más importante de nuestro gráfico. Wilke (2019) nos explica que el mapeo es un proceso de traducción en el que convertimos variables de nuestra tabla, casi siempre números y categorías, en atributos como la posición (x, y), el color, la forma o el tamaño de un elemento.\n\nPara indicar el mapeo, utilizamos el parámetro mapping y le pasamos una aes (abreviatura de “aesthetic”, que en español se traduce como “estética”). Este término puede ser problemático porque podría sugerir que se refiere únicamente a la apariencia visual del gráfico. Sin embargo, en este contexto, “estética” se refiere a los atributos fundamentales que conforman un gráfico, como la posición (x, y), el color, la forma o el tamaño de los elementos.\nEn el ámbito del arte, la estética se ocupa de las propiedades que hacen que una obra de arte sea significativa y apreciable, más allá de su mera apariencia visual. Del mismo modo, en ggplot2, la estética se centra en cómo se representan los datos de manera que sean comprensibles y efectivos, no solo en cómo se ven.\nPor ejemplo, en nuestro caso, la variable largo_pico_mm, que es una variable numérica en nuestra tabla, en nuestro gráfico se va a representar como la posición de los elementos en el eje x, y el alto_pico_mm pasará a representarse como la posición de los elementos en el eje y. Estamos traduciendo números de la tabla a ubicaciones, posiciones, en el espacio del gráfico. En esto consiste el mapeo.\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm\n  )\n)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#geometrías",
+    "href": "clases/02_intro_shiny.html#geometrías",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Geometrías",
+    "text": "Geometrías\nSi nuestro gráfico fuera una construcción, digamos una casa, los datos y el mapeo serían los planos. Pero ahora toca ponerse manos a la obra para construir. Ese es el rol de las geometrías. Estas son las encargadas de dibujar los puntos, barras, líneas o cualquier otro elemento que veamos en el gráfico.\n\nLas geometrías ya saben qué colores, posiciones y tamaños usar porque se los indicamos en el mapeo, ya vienen en los planos de la casa. Y así como hay albañiles, electricistas y plomeros, cada geom se especializa en construir un tipo de gráfico. Entre los más comunes están:\n\ngeom_point: gráfico de puntos (dispersión)\ngeom_bar/geom_col: gráficos de barras\ngeom_line: gráficos de líneas\ngeom_histogram: histogramas\n\nEn ggplot2.tidyverse.org, puedes encontrar una lista gigante de todas las geometrías que podemos utilizar, pero por ahora, con estos tenemos más que suficiente.\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm\n  )\n) +\n  geom_point()\n\n\n\n\n\n\n\n\nSi alguna vez has hecho reparaciones en la casa, sabes que siempre al final alguien quiere algún cambio. Así que ahora yo quiero que mis puntos tengan colores, pero no cualquiera; quiero que el color dependa de la especie del pingüino. Como lo que queremos es que se tomen datos de la tabla para representarlos en el gráfico, debemos colocar esto en el mapping.\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n  )\n) +\n  geom_point()",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#etiquetas",
+    "href": "clases/02_intro_shiny.html#etiquetas",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Etiquetas",
+    "text": "Etiquetas\nLas formas y los colores no son suficientes para dejar todo claro. Es por eso que todo gráfico que se precie de profesional debe llevar texto que lo acompañe: un título, subtítulo y una fuente.\nTodos estos los vamos a colocar en una capa llamada labs().\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  )\n\n\n\n\n\n\n\n\nAunque podemos encontrar en Estadística y Censos (INEC) (2017) una muy buena guía de cómo debemos redactar estos títulos y subtítulos para presentar gráficos estadísticos, para los términos del taller vamos a ser más “informales”. Sin embargo, vale mucho la pena revisarla.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#escalas",
+    "href": "clases/02_intro_shiny.html#escalas",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Escalas",
+    "text": "Escalas\nAl inicio te comentaba que todos aman a ggplot2. Esto se debe a que cosas que antes teníamos que hacer a mano con el paquete graphics, ahora las podemos hacer de forma casi mágica🪄. El paquete decide por nosotros aspectos como los colores a usar, las divisiones de los ejes y muchas otras cosas.\nA medida que avanzamos, comenzamos a ponernos más exigentes con estos detalles y la primera duda que siempre surge es: “💬 Ok, pero esos colores no me gustan, ¿puedo poner otros?”\nCuando queremos modificar algo que ggplot2 ha seleccionado por nosotros, utilizamos las escalas.\nWickham, Navarro, y Pedersen (2024) explican de forma más rigurosa que las escalas controlan el mapeo de datos a atributos estéticos. Transforman tus datos en algo que puedes visualizar, como tamaño, color, posición o forma. Además, proporcionan las herramientas que te permiten interpretar el gráfico, como los ejes y las leyendas. Aunque es posible generar gráficos con ggplot2 sin comprender cómo funcionan las escalas, entenderlas y aprender a manipularlas te dará mucho más control sobre tus gráficos.\nEn este caso, para el color vamos a utilizar la escala scale_color_manual. A esta le indicaremos en el parámetro values los colores que queremos utilizar para nuestro gráfico.\nPara especificar los colores, podemos hacerlo usando el nombre del color. La Universidad de Columbia nos hace el enorme favor de listar los colores por nombre, o podemos especificar el código hexadecimal del color. Suena raro, pero es fácil. En la computadora, los colores se guardan de manera diferente. Para evitar confusiones, cada posible color que genera la pantalla tiene un código único. Estos códigos se ven algo así.\n La pregunta obvia es: ¿y de dónde saco esos códigos? Bueno, puedes buscar en Google “color picker” o utilizar sitios web como Color Hunt, que también pueden ser útiles.\n\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  ) +\n  scale_color_manual(\n    values = c(\"#EF9C66\",\"#C738BD\",\"#3AA6B9\")\n  )",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#temas",
+    "href": "clases/02_intro_shiny.html#temas",
+    "title": "Visualización de datos con ggplot2",
+    "section": "Temas",
+    "text": "Temas\nLos temas son cambios de apariencia que podemos aplicar a los gráficos. Aunque más adelante descubrirás que podemos hacer cosas muy interesantes con los temas, por ahora solo aplicaremos uno: theme_minimal().\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  ) +\n  scale_color_manual(\n    values = c(\"#EF9C66\",\"#C738BD\",\"#3AA6B9\")\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\n\nComo ves, hay bastantes conceptos detrás de un gráfico tan “sencillo” como este. Ahora vamos a practicar directamente en RStudio.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#anatomía-de-una-aplicación-shiny",
+    "href": "clases/02_intro_shiny.html#anatomía-de-una-aplicación-shiny",
+    "title": "Introducción a Shiny",
+    "section": "Anatomía de una aplicación Shiny",
+    "text": "Anatomía de una aplicación Shiny\nShiny se compone de dos partes principales: la interfaz de usuario (UI) y el servidor (Server). Cada uno tiene un rol específico en la creación de una aplicación Shiny.\n\nInterfaz de Usuario (UI)\nLa UI define la apariencia y el diseño de la aplicación. Es el lugar donde se especifica cómo se verá la aplicación y cómo los usuarios interactuarán con ella.\nSe crea usando funciones de Shiny que generan los elementos de la interfaz, como fluidPage(), sidebarLayout(), mainPanel(), input y output.\nEspecifica la disposición de los controles de entrada (como cuadros de texto, botones y deslizadores) y los elementos de salida (como gráficos y tablas).\n\n\nServidor (Server)\nEl servidor contiene la lógica de la aplicación. Aquí se definen las operaciones que se realizan en respuesta a las interacciones del usuario.\nSe define como una función (server function) que toma dos argumentos: input y output. input contiene los valores introducidos por el usuario a través de la UI. output contiene las instrucciones para generar el contenido que se mostrará en la UI, como gráficos o tablas.\nDentro del servidor, se utilizan funciones reactivas y observadores para actualizar dinámicamente los elementos de la interfaz en respuesta a los cambios en los datos de entrada.\n\n\nlibrary(shiny)\n\nui &lt;- fluidPage(\n  numericInput(\n    inputId = \"numero\",\n    label = \"ingrese un número\",\n    value = 0\n  ),\n  textOutput(\n    outputId = \"salida\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$salida &lt;- renderText({\n    input$numero + 1\n  })\n}\n\nshinyApp(ui, server)\n\nEsta app, aunque parece extremadamente sencilla, es fundamental para entender cómo funciona una aplicación Shiny. Hasta que no tengas claros los siguientes conceptos:\n\ninput\noutput\nrender\nreactividad\nciclo de vida de un dato\n\nno vale la pena intentar construir algo más complejo.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#inputs-y-outputs",
+    "href": "clases/02_intro_shiny.html#inputs-y-outputs",
+    "title": "Introducción a Shiny",
+    "section": "Inputs y Outputs",
+    "text": "Inputs y Outputs\nShiny nos ofrece una larga lista de widgets para leer datos (inputs) o mostrar datos (outputs). Puedes verlos en la siguiente lista: Widget Gallery.\n\nlibrary(shiny)\n\nui &lt;- fluidPage(\n  numericInput(\n    inputId = \"numero\",\n    label = \"ingrese un número\",\n    value = 0\n  ),\n  selectInput(\n    inputId = \"colores\",\n    label = \"Selecciona un color\",\n    choices = c(\"red\",\"blue\",\"green\"),\n    selected = \"red\"\n  ),\n  sliderInput(\n    inputId = \"edad\",\n    label = \"Ingrese su edad\",\n    min = 20,\n    max = 50,\n    value = 25\n  ),\n  textInput(\n    inputId = \"nombre\",\n    label = \"Ingrese su nombre\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/02_intro_shiny.html#renders",
+    "href": "clases/02_intro_shiny.html#renders",
+    "title": "Introducción a Shiny",
+    "section": "Renders",
+    "text": "Renders\nAntes de poder entender bien los outputs, hay que comprender qué es un render. Esto funciona más o menos así: cuando en R hacemos un cálculo, un gráfico, un número o cualquier otro tipo de resultado y queremos mostrarlo en el navegador como una aplicación Shiny, se debe hacer una traducción de R a un lenguaje que el navegador (Chrome, Firefox, Safari) entienda. El encargado de hacer esa traducción es el render.\nPor esta razón, tenemos un render especializado para cada tipo de output. Por ejemplo, si queremos enviar valores a un output que es un texto, debemos llamar a renderText. Si fuera un gráfico, usaríamos renderPlot. Y así para cada tipo de output. Siempre, siempre vamos a tener asociado un render; son inseparables.\n\nlibrary(shiny)\nlibrary(dplyr)\n\npinguinos &lt;- datos::pinguinos\n\nnumericas &lt;- colnames(select(pinguinos,where(is.numeric)))\ncategoricas &lt;- colnames(select(pinguinos,where(is.factor)))\n\nui &lt;- fluidPage(\n  selectInput(\n    inputId = \"x\",\n    label = \"Selecciona un variable (x)\",\n    choices = numericas,\n    selected = numericas[1]\n  ),\n  selectInput(\n    inputId = \"y\",\n    label = \"Selecciona un variable (y)\",\n    choices = numericas,\n    selected = numericas[1]\n  ),\n  sliderInput(\n    inputId = \"size\",\n    label = \"Selecciona un tamaño\",\n    min = 1,\n    max = 8,\n    value = 3\n  ),\n  selectInput(\n    inputId = \"color\",\n    label = \"Selecciona un variable (color)\",\n    choices = categoricas,\n    selected = categoricas[1]\n  ),\n  plotOutput(\n    outputId = \"grafico\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$grafico &lt;- renderPlot({\n    ggplot(\n      data = pinguinos,\n      mapping = aes_string(\n        x = input$x,\n        y = input$y,\n        color = input$color\n      ) \n    )+\n      geom_point(size = input$size) +\n      theme_minimal()\n  })\n  \n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a Shiny"
+    ]
   }
 ]
