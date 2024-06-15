@@ -39,6 +39,10 @@ website:
           - text: "Introducción a Shiny"
             href: clases/02_intro_shiny.qmd
         - text: "---"
+        - section: "Semana 2"
+          contents:
+          - text: "Shiny Burgers: Conceptos Básicos"
+            href: clases/03_Shiny_Burgers.qmd
 
 author:
   - name: "Carlos Aguero Barquero"

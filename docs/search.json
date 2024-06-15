@@ -66,60 +66,35 @@
     "href": "codigo_conducta.html",
     "title": "Código de conducta",
     "section": "",
-    "text": "Nos comprometemos a ofrecer un ambiente educativo seguro y acogedor para todos, sin importar su experiencia, identidad o conocimiento. Este Código de Conducta, fuertemente inspirado por el código de conducta de The Software Carpentries, establece nuestras expectativas para todos los participantes de nuestro curso en línea, así como las consecuencias para comportamientos inaceptables.",
-    "crumbs": [
-      "Lecciones",
-      "Antes de comenzar",
-      "Código de Conducta"
-    ]
+    "text": "Nos comprometemos a ofrecer un ambiente educativo seguro y acogedor para todos, sin importar su experiencia, identidad o conocimiento. Este Código de Conducta, fuertemente inspirado por el código de conducta de The Software Carpentries, establece nuestras expectativas para todos los participantes de nuestro curso en línea, así como las consecuencias para comportamientos inaceptables."
   },
   {
     "objectID": "codigo_conducta.html#reporte-de-incidentes",
     "href": "codigo_conducta.html#reporte-de-incidentes",
     "title": "Código de conducta",
     "section": "Reporte de Incidentes",
-    "text": "Reporte de Incidentes\n\nLos incidentes deben reportarse a través de un formulario anónimo, garantizando la privacidad y seguridad de quien reporta.\nCada reporte será tratado con seriedad y confidencialidad.",
-    "crumbs": [
-      "Lecciones",
-      "Antes de comenzar",
-      "Código de Conducta"
-    ]
+    "text": "Reporte de Incidentes\n\nLos incidentes deben reportarse a través de un formulario anónimo, garantizando la privacidad y seguridad de quien reporta.\nCada reporte será tratado con seriedad y confidencialidad."
   },
   {
     "objectID": "codigo_conducta.html#comportamiento-esperado",
     "href": "codigo_conducta.html#comportamiento-esperado",
     "title": "Código de conducta",
     "section": "Comportamiento Esperado",
-    "text": "Comportamiento Esperado\n\nUtilizar un lenguaje inclusivo y respetuoso.\nRespetar distintas opiniones y experiencias.\nRecibir y dar críticas constructivas de manera positiva.\nPriorizar el bienestar de la comunidad educativa.\nActuar con cortesía y respeto hacia todos.",
-    "crumbs": [
-      "Lecciones",
-      "Antes de comenzar",
-      "Código de Conducta"
-    ]
+    "text": "Comportamiento Esperado\n\nUtilizar un lenguaje inclusivo y respetuoso.\nRespetar distintas opiniones y experiencias.\nRecibir y dar críticas constructivas de manera positiva.\nPriorizar el bienestar de la comunidad educativa.\nActuar con cortesía y respeto hacia todos."
   },
   {
     "objectID": "codigo_conducta.html#comportamiento-inaceptable",
     "href": "codigo_conducta.html#comportamiento-inaceptable",
     "title": "Código de conducta",
     "section": "Comportamiento Inaceptable",
-    "text": "Comportamiento Inaceptable\nCualquier forma de acoso, discriminación o intimidación, incluyendo pero no limitado a:\n\nComentarios ofensivos relacionados con género, orientación sexual, discapacidad, apariencia física, tamaño corporal, raza, religión.\nAmenazas o insultos.\nAtención sexual indeseada o imágenes de contenido sexual.\nInterrupción persistente de las sesiones o comunicaciones.",
-    "crumbs": [
-      "Lecciones",
-      "Antes de comenzar",
-      "Código de Conducta"
-    ]
+    "text": "Comportamiento Inaceptable\nCualquier forma de acoso, discriminación o intimidación, incluyendo pero no limitado a:\n\nComentarios ofensivos relacionados con género, orientación sexual, discapacidad, apariencia física, tamaño corporal, raza, religión.\nAmenazas o insultos.\nAtención sexual indeseada o imágenes de contenido sexual.\nInterrupción persistente de las sesiones o comunicaciones."
   },
   {
     "objectID": "codigo_conducta.html#consecuencias",
     "href": "codigo_conducta.html#consecuencias",
     "title": "Código de conducta",
     "section": "Consecuencias",
-    "text": "Consecuencias\n\nLos participantes que violen estas reglas serán expulsados del curso sin derecho a reembolso.\nSe les prohibirá la participación en futuras actividades presenciales y en línea.\n\nNos dedicamos a crear un entorno de aprendizaje positivo y enriquecedor para todos. Esperamos que todos los participantes colaboren para asegurar una experiencia educativa segura y respetuosa.",
-    "crumbs": [
-      "Lecciones",
-      "Antes de comenzar",
-      "Código de Conducta"
-    ]
+    "text": "Consecuencias\n\nLos participantes que violen estas reglas serán expulsados del curso sin derecho a reembolso.\nSe les prohibirá la participación en futuras actividades presenciales y en línea.\n\nNos dedicamos a crear un entorno de aprendizaje positivo y enriquecedor para todos. Esperamos que todos los participantes colaboren para asegurar una experiencia educativa segura y respetuosa."
   },
   {
     "objectID": "index.html",
@@ -268,7 +243,7 @@
     "href": "clases/01_gramatica_graficos.html#escalas",
     "title": "Visualización de datos con ggplot2",
     "section": "Escalas",
-    "text": "Escalas\nAl inicio te comentaba que todos aman a ggplot2. Esto se debe a que cosas que antes teníamos que hacer a mano con el paquete graphics, ahora las podemos hacer de forma casi mágica🪄. El paquete decide por nosotros aspectos como los colores a usar, las divisiones de los ejes y muchas otras cosas.\nA medida que avanzamos, comenzamos a ponernos más exigentes con estos detalles y la primera duda que siempre surge es: “💬 Ok, pero esos colores no me gustan, ¿puedo poner otros?”\nCuando queremos modificar algo que ggplot2 ha seleccionado por nosotros, utilizamos las escalas.\nWickham, Navarro, y Pedersen (2024) explican de forma más rigurosa que las escalas controlan el mapeo de datos a atributos estéticos. Transforman tus datos en algo que puedes visualizar, como tamaño, color, posición o forma. Además, proporcionan las herramientas que te permiten interpretar el gráfico, como los ejes y las leyendas. Aunque es posible generar gráficos con ggplot2 sin comprender cómo funcionan las escalas, entenderlas y aprender a manipularlas te dará mucho más control sobre tus gráficos.\nEn este caso, para el color vamos a utilizar la escala scale_color_manual. A esta le indicaremos en el parámetro values los colores que queremos utilizar para nuestro gráfico.\nPara especificar los colores, podemos hacerlo usando el nombre del color. La Universidad de Columbia nos hace el enorme favor de listar los colores por nombre, o podemos especificar el código hexadecimal del color. Suena raro, pero es fácil. En la computadora, los colores se guardan de manera diferente. Para evitar confusiones, cada posible color que genera la pantalla tiene un código único. Estos códigos se ven algo así.\n La pregunta obvia es: ¿y de dónde saco esos códigos? Bueno, puedes buscar en Google “color picker” o utilizar sitios web como Color Hunt, que también pueden ser útiles.\n\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  ) +\n  scale_color_manual(\n    values = c(\"#EF9C66\",\"#C738BD\",\"#3AA6B9\")\n  )",
+    "text": "Escalas\nAl inicio te comentaba que todos aman a ggplot2. Esto se debe a que cosas que antes teníamos que hacer a mano con el paquete graphics, ahora las podemos hacer de forma casi mágica🪄. El paquete decide por nosotros aspectos como los colores a usar, las divisiones de los ejes y muchas otras cosas.\nA medida que avanzamos, comenzamos a ponernos más exigentes con estos detalles y la primera duda que siempre surge es: “💬 Ok, pero esos colores no me gustan, ¿puedo poner otros?”\nCuando queremos modificar algo que ggplot2 ha seleccionado por nosotros, utilizamos las escalas.\nWickham, Navarro, y Pedersen (2024) explican de forma más rigurosa que las escalas controlan el mapeo de datos a atributos estéticos. Transforman tus datos en algo que puedes visualizar, como tamaño, color, posición o forma. Además, proporcionan las herramientas que te permiten interpretar el gráfico, como los ejes y las leyendas. Aunque es posible generar gráficos con ggplot2 sin comprender cómo funcionan las escalas, entenderlas y aprender a manipularlas te dará mucho más control sobre tus gráficos.\nEn este caso, para el color vamos a utilizar la escala scale_color_manual. A esta le indicaremos en el parámetro values los colores que queremos utilizar para nuestro gráfico.\nPara especificar los colores, podemos hacerlo usando el nombre del color. La Universidad de Columbia nos hace el enorme favor de listar los colores por nombre, o podemos especificar el código hexadecimal del color. Suena raro, pero es fácil. En la computadora, los colores se guardan de manera diferente. Para evitar confusiones, cada posible color que genera la pantalla tiene un código único. Estos códigos se ven algo así.\n\nLa pregunta obvia es: ¿y de dónde saco esos códigos? Bueno, puedes buscar en Google “color picker” o utilizar sitios web como Color Hunt, que también pueden ser útiles.\n\n\nggplot(\n  data = pinguinos,\n  mapping = aes(\n    x = largo_pico_mm,\n    y = alto_pico_mm,\n    color = especie\n    )\n  ) +\n  geom_point() +\n  labs(\n    title = \"Relación entre el largo y el alto del pico de los pingüinos\",\n    subtitle = \"Datos agrupados por especie\",\n    x = \"Largo del pico (mm)\",\n    y = \"Alto del pico (mm)\",\n    color = \"Especie\",\n    caption = \"Fuente: Paquete 'datos'\"\n  ) +\n  scale_color_manual(\n    values = c(\"#EF9C66\",\"#C738BD\",\"#3AA6B9\")\n  )",
     "crumbs": [
       "Lecciones",
       "Semana 1",
@@ -417,6 +392,150 @@
       "Lecciones",
       "Semana 1",
       "Introducción a Shiny"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html",
+    "href": "clases/03_Shiny_Burgers.html",
+    "title": "Shiny Burguers",
+    "section": "",
+    "text": "ReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#anatomía-de-una-aplicación-shiny",
+    "href": "clases/03_Shiny_Burgers.html#anatomía-de-una-aplicación-shiny",
+    "title": "Shiny Burguers",
+    "section": "Anatomía de una aplicación Shiny",
+    "text": "Anatomía de una aplicación Shiny\nShiny se compone de dos partes principales: la interfaz de usuario (UI) y el servidor (Server). Cada uno tiene un rol específico en la creación de una aplicación Shiny.\n\nInterfaz de Usuario (UI)\nLa UI define la apariencia y el diseño de la aplicación. Es el lugar donde se especifica cómo se verá la aplicación y cómo los usuarios interactuarán con ella.\nSe crea usando funciones de Shiny que generan los elementos de la interfaz, como fluidPage(), sidebarLayout(), mainPanel(), input y output.\nEspecifica la disposición de los controles de entrada (como cuadros de texto, botones y deslizadores) y los elementos de salida (como gráficos y tablas).\n\n\nServidor (Server)\nEl servidor contiene la lógica de la aplicación. Aquí se definen las operaciones que se realizan en respuesta a las interacciones del usuario.\nSe define como una función (server function) que toma dos argumentos: input y output. input contiene los valores introducidos por el usuario a través de la UI. output contiene las instrucciones para generar el contenido que se mostrará en la UI, como gráficos o tablas.\nDentro del servidor, se utilizan funciones reactivas y observadores para actualizar dinámicamente los elementos de la interfaz en respuesta a los cambios en los datos de entrada.\n\n\nlibrary(shiny)\n\nui &lt;- fluidPage(\n  numericInput(\n    inputId = \"numero\",\n    label = \"ingrese un número\",\n    value = 0\n  ),\n  textOutput(\n    outputId = \"salida\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$salida &lt;- renderText({\n    input$numero + 1\n  })\n}\n\nshinyApp(ui, server)\n\nEsta app, aunque parece extremadamente sencilla, es fundamental para entender cómo funciona una aplicación Shiny. Hasta que no tengas claros los siguientes conceptos:\n\ninput\noutput\nrender\nreactividad\nciclo de vida de un dato\n\nno vale la pena intentar construir algo más complejo.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#inputs-y-outputs",
+    "href": "clases/03_Shiny_Burgers.html#inputs-y-outputs",
+    "title": "Shiny Burguers",
+    "section": "Inputs y Outputs",
+    "text": "Inputs y Outputs\nShiny nos ofrece una larga lista de widgets para leer datos (inputs) o mostrar datos (outputs). Puedes verlos en la siguiente lista: Widget Gallery.\n\nlibrary(shiny)\n\nui &lt;- fluidPage(\n  numericInput(\n    inputId = \"numero\",\n    label = \"ingrese un número\",\n    value = 0\n  ),\n  selectInput(\n    inputId = \"colores\",\n    label = \"Selecciona un color\",\n    choices = c(\"red\",\"blue\",\"green\"),\n    selected = \"red\"\n  ),\n  sliderInput(\n    inputId = \"edad\",\n    label = \"Ingrese su edad\",\n    min = 20,\n    max = 50,\n    value = 25\n  ),\n  textInput(\n    inputId = \"nombre\",\n    label = \"Ingrese su nombre\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#renders",
+    "href": "clases/03_Shiny_Burgers.html#renders",
+    "title": "Shiny Burguers",
+    "section": "Renders",
+    "text": "Renders\nAntes de poder entender bien los outputs, hay que comprender qué es un render. Esto funciona más o menos así: cuando en R hacemos un cálculo, un gráfico, un número o cualquier otro tipo de resultado y queremos mostrarlo en el navegador como una aplicación Shiny, se debe hacer una traducción de R a un lenguaje que el navegador (Chrome, Firefox, Safari) entienda. El encargado de hacer esa traducción es el render.\nPor esta razón, tenemos un render especializado para cada tipo de output. Por ejemplo, si queremos enviar valores a un output que es un texto, debemos llamar a renderText. Si fuera un gráfico, usaríamos renderPlot. Y así para cada tipo de output. Siempre, siempre vamos a tener asociado un render; son inseparables.\n\nlibrary(shiny)\nlibrary(dplyr)\n\npinguinos &lt;- datos::pinguinos\n\nnumericas &lt;- colnames(select(pinguinos,where(is.numeric)))\ncategoricas &lt;- colnames(select(pinguinos,where(is.factor)))\n\nui &lt;- fluidPage(\n  selectInput(\n    inputId = \"x\",\n    label = \"Selecciona un variable (x)\",\n    choices = numericas,\n    selected = numericas[1]\n  ),\n  selectInput(\n    inputId = \"y\",\n    label = \"Selecciona un variable (y)\",\n    choices = numericas,\n    selected = numericas[1]\n  ),\n  sliderInput(\n    inputId = \"size\",\n    label = \"Selecciona un tamaño\",\n    min = 1,\n    max = 8,\n    value = 3\n  ),\n  selectInput(\n    inputId = \"color\",\n    label = \"Selecciona un variable (color)\",\n    choices = categoricas,\n    selected = categoricas[1]\n  ),\n  plotOutput(\n    outputId = \"grafico\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$grafico &lt;- renderPlot({\n    ggplot(\n      data = pinguinos,\n      mapping = aes_string(\n        x = input$x,\n        y = input$y,\n        color = input$color\n      ) \n    )+\n      geom_point(size = input$size) +\n      theme_minimal()\n  })\n  \n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#estructura-básica-de-una-aplicación-shiny",
+    "href": "clases/03_Shiny_Burgers.html#estructura-básica-de-una-aplicación-shiny",
+    "title": "Shiny Burguers",
+    "section": "Estructura Básica de una Aplicación Shiny",
+    "text": "Estructura Básica de una Aplicación Shiny\nImaginemos que estamos en un restaurante llamado Shiny Burgers 🍔. Este lugar, como cualquier buen restaurante, tiene dos áreas principales: el salón principal y la cocina.\nEl salón principal, donde se atiende a los clientes, es nuestra UI (interfaz de usuario). Aquí, los meseros, que representan los Inputs y Outputs, son los encargados de interactuar directamente con los clientes. Los Inputs son los meseros que reciben las órdenes de los clientes, como campos de texto, botones y menús desplegables. Estos meseros llevan las órdenes a la cocina.\nLa cocina es el server, el lugar donde se preparan las órdenes. Dentro de la cocina, los renderers 👨🏻‍🍳 son los cocineros. Estos cocineros toman las órdenes que les llevan los meseros (Inputs)✍🏻, preparan los alimentos siguiendo recetas y procesos específicos, y una vez que la comida está lista, la entregan a los meseros (Outputs) 💁🏻‍♂️.\nVolviendo a nuestra analogía, cuando un cliente llega a Shiny Burgers, interactúa con los meseros (Inputs) en el salón principal (UI). El cliente revisa el menú y hace su pedido. Los meseros (Inputs) llevan este pedido a la cocina (server), donde los renderers (cocineros) trabajan en preparar el pedido. Los renderers siguen las recetas y procesos necesarios para transformar los ingredientes (datos) en un plato delicioso.\nUna vez que la comida está lista, los renderers (cocineros) entregan el plato a los meseros (Outputs), quienes se lo llevan de vuelta al cliente en el salón principal (UI). De esta manera, el cliente recibe su pedido preparado.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#primera-app",
+    "href": "clases/03_Shiny_Burgers.html#primera-app",
+    "title": "Shiny Burguers",
+    "section": "Primera app",
+    "text": "Primera app\n\nlibrary(shiny)\n\nui &lt;- fluidPage(\n  textInput(\n    inputId = \"nombre\",\n    label = \"Ingrese su nombre\"\n  ),\n  textOutput(\n    outputId = \"saludo\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$saludo &lt;- renderText({\n    paste0(\"Hola\",input$nombre, \"!\")\n  })\n  \n}\n\nshinyApp(ui, server)\n\nEn este primer ejemplo, tenemos un textInput. Eso quiere decir que nuestro usuario va a poder ingresar un texto a la aplicación. Y por otro lado tenemos un textOutput, o una salida de texto. Quiere decir que en algún momento de la aplicación, nosotros vamos a mostrarle un texto al usuario.\n\nui &lt;- fluidPage(\n  textInput(\n    inputId = \"nombre\", # nombre unico para el input\n    label = \"Ingrese su nombre\"\n  ),\n  textOutput(\n    outputId = \"saludo\" # nombre unico para el output\n  )\n)\n\nComo dijimos antes, todo esto se cocina en el lado del servidor. Es por eso que vemos que el output, llamado saludo, es en el server en donde lo creamos.\nAlgo importante e indispensable: siempre un output va a estar asociado a un tipo específico de render. De la misma forma que hay cocineros que son buenos haciendo sushi, otros son buenos haciendo hamburguesas, otros son buenos haciendo sopa. Tenemos renders que se especializan para cada uno de los tipos de platos que se pueden preparar, o en este caso los tipos de outputs que podemos tener.\n\n# usamos renderText porque el output es de tipo Texto\noutput$saludo &lt;- renderText({\n    paste0(\"Hola\",input$nombre, \"!\")\n  })\n\nEn este caso, como lo que queremos preparar es un textOutput, vamos a llamar a la función especializada, que sería renderText. Si ejecutamos este código, vamos a ver que tenemos una pequeña aplicación, que cuando una persona ingresa un texto, en este caso su nombre, la salida que se genera en el textOutput es “hola” y el nombre que se ingresó.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#vamos-a-practicar",
+    "href": "clases/03_Shiny_Burgers.html#vamos-a-practicar",
+    "title": "Shiny Burguers",
+    "section": "Vamos a practicar🏋🏻‍♀️",
+    "text": "Vamos a practicar🏋🏻‍♀️\n\nCrear un nuevo script de Shiny: En este script, estableceremos la estructura básica de una aplicación Shiny. No se preocupen por trabajar con dos archivos como les han enseñado; comenzaremos con un solo archivo para simplificar el proceso. No hay ninguna diferencia y será más fácil para todos nosotros.\nCrear una aplicación básica: La aplicación consistirá en un Numeric Input, donde el usuario podrá ingresar un número, y un Output de tipo texto. En el servidor, tomaremos el número ingresado por el usuario, le sumaremos 7 y lo presentaremos en pantalla a través del Text Output que creamos anteriormente.\nTiempo estimado: Disponemos de 5 a 10 minutos para completar este ejercicio. Trabajaremos en grupos.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#veamos-nuevos-inputs",
+    "href": "clases/03_Shiny_Burgers.html#veamos-nuevos-inputs",
+    "title": "Shiny Burguers",
+    "section": "Veamos nuevos Inputs",
+    "text": "Veamos nuevos Inputs\nTenemos diferentes tipos de inputs. En el siguiente enlace, que es la Galería Oficial Shiny, podrás ver los tipos de inputs y outputs disponibles. Es importante recordar que diferentes tipos de inputs requieren diferentes parámetros.\nPor ejemplo:\n\nSelect Input: Es ideal para seleccionar entre múltiples categorías. Los parámetros necesarios son:\n\nLabel: La etiqueta que se mostrará al usuario.\nChoices: Las opciones disponibles para seleccionar.\nSelected: La opción que se mostrará por defecto al abrir la aplicación.\n\nSlider Input: Permite seleccionar uno o dos números. Los parámetros necesarios son:\n\nMin: El valor mínimo.\nMax: El valor máximo.\nValue: El valor o valores seleccionados. Puede ser un único número o un vector con dos números para especificar un rango.\n\n\n\nlibrary(shiny)\nlibrary(datos)\nlibrary(tidyverse)\n\ndatos &lt;- pinguinos\n\nui &lt;- fluidPage(\n  selectInput(\n    inputId = \"especie\",\n    label = \"Seleccione una espacie\",\n    choices = c(\"Adelia\",  \"Papúa\",   \"Barbijo\"),\n    selected = \"Adelia\"\n  ),\n  sliderInput(\n    inputId = \"anio\",\n    label = \"Seleccione un año\",\n    min = 2007,\n    max = 2009,\n    value = 2008\n  ),\n  plotOutput(\n    outputId = \"grafico\"\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$grafico &lt;- renderPlot({\n    \n    df &lt;- datos |&gt; \n      filter(especie == input$especie, anio == input$anio)\n    \n    ggplot(\n      data = df,\n      mapping = aes(\n        x = alto_pico_mm\n      )\n    ) +\n      geom_histogram(color = \"white\") +\n      theme_minimal()\n    \n  })\n  \n}\n\nshinyApp(ui, server)\n\n\nInterfaz de usuario. (UI)\nEn nuestra aplicación, primero definimos los inputs y outputs. Un input será la especie del pingüino y el otro será el año de la observación.\nCreamos un selectInput con los nombres de las especies disponibles en el dataset, permitiendo al usuario elegir una especie específica.\nTambién añadimos un sliderInput para seleccionar el año de la observación, con un rango de 2007 a 2009.\nFinalmente, definimos un plotOutput, inicialmente vacío, donde se mostrará el gráfico generado por la aplicación.\n\nselectInput(\n    inputId = \"especie\",\n    label = \"Seleccione una espacie\",\n    choices = c(\"Adelia\",  \"Papúa\",   \"Barbijo\"),\n    selected = \"Adelia\"\n  ),\n  sliderInput(\n    inputId = \"anio\",\n    label = \"Seleccione un año\",\n    min = 2007,\n    max = 2009,\n    value = 2008\n  ),\n  plotOutput(\n    outputId = \"grafico\"\n  )\n\n\n\nServer\nDel lado del servidor, aparece un concepto clave: la reactividad.⚡️ Imagina que haces un pedido en un restaurante y luego necesitas modificarlo porque olvidaste mencionar que eres alérgico al tomate.🍅 El mesero corre a la cocina para hacer el cambio.\nLa reactividad en Shiny funciona de manera similar; automáticamente, cuando los inputs cambian, se envían señales al servidor para que vuelva a preparar desde cero lo que se mostrará en los outputs. En nuestro caso, necesitamos que la tabla de pingüinos se filtre para mostrar solo los pingüinos de la especie seleccionada y para el año seleccionado. Para hacerlo, llamamos directamente a input$especie y input$anio.\n\noutput$grafico &lt;- renderPlot({\n    \n    df &lt;- datos |&gt; \n      filter(especie == input$especie, anio == input$anio)\n    \n    ggplot(\n      data = df,\n      mapping = aes(\n        x = alto_pico_mm\n      )\n    ) +\n      geom_histogram(color = \"white\") +\n      theme_minimal()\n    \n  })\n\nEs crucial entender que cuando un render usa información de los inputs, se crea una dependencia entre ellos, y cualquier cambio en un input hará que se genere una nueva salida.\nUna vez tenemos esta tabla filtrada, podemos usar ggplot2 para crear nuestro gráfico de histograma. Es importante que la última línea dentro de un renderPlot sea la que genera el gráfico, y lo mismo aplica para todos los otros tipos de renders.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#vamos-a-practicar-1",
+    "href": "clases/03_Shiny_Burgers.html#vamos-a-practicar-1",
+    "title": "Shiny Burguers",
+    "section": "Vamos a practicar 🏋🏻‍♀️",
+    "text": "Vamos a practicar 🏋🏻‍♀️\n\nDefinir la estructura de nuestra app con Shiny: En este script, estableceremos la estructura básica de una aplicación Shiny. No se preocupen por trabajar con dos archivos como les han enseñado; comenzaremos con un solo archivo para simplificar el proceso. No hay ninguna diferencia y será más fácil para todos nosotros.\nCrear los inputs:\n\nCrear un select input para elegir la especie de pingüino.\nCrear un slider input para seleccionar el año de observación (2007-2009).\nCrear un slider input para ajustar el tamaño de los puntos en el gráfico.\n\nGenerar un gráfico de dispersión: • Filtrar la tabla de pingüinos según la especie y el año seleccionados. • Generar el gráfico de dispersión utilizando ggplot2, mostrando en el eje Y el largo del pico y en el eje X el ancho del pico. Ajustar el tamaño de los puntos según el valor seleccionado.\n\nTiempo estimado: Disponemos de 10 a 15 minutos para completar este ejercicio. Trabajaremos en grupos.⏰",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#layouts",
+    "href": "clases/03_Shiny_Burgers.html#layouts",
+    "title": "Shiny Burguers",
+    "section": "Layouts",
+    "text": "Layouts\nAhora que tenemos claros los conceptos más básicos de cómo trabajar con Shiny, veamos cómo podemos organizar la interfaz. Las formas en las que distribuimos o repartimos los elementos de la interfaz se suelen denominar como layouts. Hay muchos tipos de layouts y podríamos incluso inventar nuestros propios si lo deseamos. Sin embargo, para los términos de este taller, vamos a utilizar solamente uno, que es probablemente el más simple y también el más utilizado: el SidebarLayout.\nEl SidebarLayout nos permite tener, en un lado, normalmente a la izquierda, los controladores o todos los inputs de nuestra aplicación. En el lado derecho, tenemos un panel más grande y principal donde se mostrarán los resultados, como tablas o gráficos.\n\nlibrary(shiny)\nlibrary(datos)\nlibrary(tidyverse)\n\ndatos &lt;- pinguinos\n\nui &lt;- fluidPage(\n  titlePanel(\"Análisis de Pingüinos\"),\n  sidebarLayout(\n    sidebarPanel(\n      selectInput(\n        inputId = \"especie\",\n        label = \"Seleccione una especie\",\n        choices = c(\"Adelia\", \"Papúa\", \"Barbijo\"),\n        selected = \"Adelia\"\n      ),\n      sliderInput(\n        inputId = \"anio\",\n        label = \"Seleccione un año\",\n        min = 2007,\n        max = 2009,\n        value = 2008\n      )\n    ),\n    mainPanel(\n      plotOutput(\n        outputId = \"grafico\"\n      )\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$grafico &lt;- renderPlot({\n    df &lt;- datos |&gt; \n      filter(especie == input$especie, anio == input$anio)\n    \n    ggplot(\n      data = df,\n      mapping = aes(\n        x = alto_pico_mm\n      )\n    ) +\n      geom_histogram(color = \"white\") +\n      theme_minimal()\n  })\n  \n}\n\nshinyApp(ui, server)\n\nEl SidebarLayout en Shiny se utiliza para organizar la interfaz de usuario en dos secciones: una barra lateral y un panel principal.\n\nSidebarPanel: Este panel se encuentra dentro del SidebarLayout y contiene todos los elementos de control, como los inputs de la aplicación (por ejemplo, selectInput, sliderInput). Es donde el usuario interactúa para ingresar datos o hacer selecciones.\nMainPanel: También dentro del SidebarLayout, este panel se usa para mostrar los resultados de la aplicación, como gráficos, tablas y otros outputs. Es el área principal donde se visualizan los datos procesados.\n\n\nui &lt;- fluidPage(\n  titlePanel(\"Análisis de Pingüinos\"),\n  sidebarLayout(\n    sidebarPanel(\n      selectInput(\n        inputId = \"especie\",\n        label = \"Seleccione una especie\",\n        choices = c(\"Adelia\", \"Papúa\", \"Barbijo\"),\n        selected = \"Adelia\"\n      ),\n      sliderInput(\n        inputId = \"anio\",\n        label = \"Seleccione un año\",\n        min = 2007,\n        max = 2009,\n        value = 2008\n      )\n    ),\n    mainPanel(\n      plotOutput(\n        outputId = \"grafico\"\n      )\n    )\n  )\n)",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#mapa-ips",
+    "href": "clases/03_Shiny_Burgers.html#mapa-ips",
+    "title": "Shiny Burguers",
+    "section": "Mapa IPS",
+    "text": "Mapa IPS\nAhora que ya podemos crear aplicaciones Shiny simples, vamos a crear una aplicación un poco más grande y compleja. Utilizaremos datos geoespaciales de Costa Rica y nuestro objetivo será que el usuario pueda seleccionar una provincia o varias provincias, y nosotros le mostraremos en un mapa de cantones diferentes indicadores que se utilizan para el cálculo del índice de progreso social en Costa Rica.\n\nDescargar datos aquí\n\n\nlibrary(shiny)\nlibrary(sf)\nlibrary(tidyverse)\n\nmapa &lt;- read_sf(\"clases/cantones_ips_cr.geojson\")\n\nui &lt;- fluidPage(\n  titlePanel(\"Análisis de Pingüinos\"),\n  sidebarLayout(\n    sidebarPanel(\n      selectInput(\n        inputId = \"provincia\",\n        label = \"Seleccione una provincia\",\n        choices = unique(mapa$provincia),\n        selected =  unique(mapa$provincia)[1]\n      ),\n      selectInput(\n        inputId = \"variable\",\n        label = \"Seleccione una variable\",\n        choices = colnames(mapa)[-c(1:5)],\n        selected =  colnames(mapa)[6]\n      )\n    ),\n    mainPanel(\n      plotOutput(\n        outputId = \"grafico\"\n      )\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  \n  output$grafico &lt;- renderPlot({\n    \n    df &lt;- mapa |&gt; \n      select(var = input$variable)\n    \n    ggplot(\n      data = df,\n      mapping = aes(\n        fill = var\n      )\n    ) +\n      geom_sf(color = \"white\") +\n      scale_fill_viridis_c() +\n      theme_minimal()\n    \n  })\n  \n}\n\nshinyApp(ui, server)\n\n\nMuchas gracias a todos por su participación y dedicación durante este taller. Sé que puede ser cansado y a veces frustrante cuando las cosas no salen perfectas a la primera. Pero recuerden, la clave está en la práctica constante. Cuanto más practiquen, más dominarán estas herramientas y técnicas.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
+    ]
+  },
+  {
+    "objectID": "clases/03_Shiny_Burgers.html#espacio-para-preguntas",
+    "href": "clases/03_Shiny_Burgers.html#espacio-para-preguntas",
+    "title": "Shiny Burguers",
+    "section": "🤔 Espacio para Preguntas",
+    "text": "🤔 Espacio para Preguntas\nAhora abrimos un espacio de 20 minutos para preguntas y consultas. Tomémonos un minuto para contestar cada pregunta, así podemos cubrir todas sus dudas. Estoy aquí para ayudarles, así que no duden en preguntar lo que necesiten.\nNuevamente, gracias por su esfuerzo y entusiasmo. Estoy aquí para apoyarlos en su aprendizaje. ¡Sigamos aprendiendo juntos!\n\n\n¿Quieres aprender más y mejorar tus habilidades con datos? 📊 Inscríbete en nuestros cursos en vivo. 🖥️ Nos adaptamos a tu horario con sesiones personalizadas. ⏰ Aprenderás de un instructor cómo sacar el máximo provecho a esta herramienta para trabajar con datos en R. 📈 Inscríbete aquí.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "Shiny Burgers: Conceptos Básicos"
     ]
   }
 ]

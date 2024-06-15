@@ -231,6 +231,41 @@ div.csl-indent {
       </ul>
   </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semana 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/03_Shiny_Burgers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shiny Burgers: Conceptos Básicos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/02_intro_shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inputs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/02_intro_shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outputs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/02_intro_shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eventos Reactivos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -478,7 +513,8 @@ $ anio            &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 20
 <p><span class="citation" data-cites="ggplot2-book">Wickham, Navarro, y Pedersen (<a href="#ref-ggplot2-book" role="doc-biblioref">2024</a>)</span> explican de forma más rigurosa que las escalas controlan el mapeo de datos a atributos estéticos. Transforman tus datos en algo que puedes visualizar, como tamaño, color, posición o forma. Además, proporcionan las herramientas que te permiten interpretar el gráfico, como los ejes y las leyendas. Aunque es posible generar gráficos con ggplot2 sin comprender cómo funcionan las escalas, entenderlas y aprender a manipularlas te dará mucho más control sobre tus gráficos.</p>
 <p>En este caso, para el color vamos a utilizar la escala scale_color_manual. A esta le indicaremos en el parámetro values los colores que queremos utilizar para nuestro gráfico.</p>
 <p>Para especificar los colores, podemos hacerlo usando el nombre del color. La Universidad de Columbia nos hace el enorme favor de <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">listar los colores por nombre</a>, o podemos especificar el código hexadecimal del color. Suena raro, pero es fácil. En la computadora, los colores se guardan de manera diferente. Para evitar confusiones, cada posible color que genera la pantalla tiene un código único. Estos códigos se ven algo así.</p>
-<p><img src="https://i.pinimg.com/originals/7f/bc/e5/7fbce596b69d62266347e6b753332d15.png" class="img-fluid" style="width:30.0%"> La pregunta obvia es: ¿y de dónde saco esos códigos? Bueno, puedes buscar en Google “color picker” o utilizar sitios web como <a href="https://colorhunt.co">Color Hunt</a>, que también pueden ser útiles.</p>
+<p><img src="https://i.pinimg.com/originals/7f/bc/e5/7fbce596b69d62266347e6b753332d15.png" class="img-fluid" style="width:30.0%"></p>
+<p>La pregunta obvia es: ¿y de dónde saco esos códigos? Bueno, puedes buscar en Google “color picker” o utilizar sitios web como <a href="https://colorhunt.co">Color Hunt</a>, que también pueden ser útiles.</p>
 <p><img src="color_picker.png" class="img-fluid" style="width:80.0%"></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>

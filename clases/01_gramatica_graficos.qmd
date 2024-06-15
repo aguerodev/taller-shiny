@@ -197,6 +197,7 @@ En este caso, para el color vamos a utilizar la escala scale_color_manual. A est
 Para especificar los colores, podemos hacerlo usando el nombre del color. La Universidad de Columbia nos hace el enorme favor de [listar los colores por nombre](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf), o podemos especificar el código hexadecimal del color. Suena raro, pero es fácil. En la computadora, los colores se guardan de manera diferente. Para evitar confusiones, cada posible color que genera la pantalla tiene un código único. Estos códigos se ven algo así.
 
 ![](https://i.pinimg.com/originals/7f/bc/e5/7fbce596b69d62266347e6b753332d15.png){width=30%}
+
 La pregunta obvia es: ¿y de dónde saco esos códigos? Bueno, puedes buscar en Google "color picker" o utilizar sitios web como [Color Hunt](https://colorhunt.co), que también pueden ser útiles.
 
 ![](color_picker.png){width=80%}

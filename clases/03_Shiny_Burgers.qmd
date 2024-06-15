@@ -1,0 +1,418 @@
+---
+title: "Shiny Burguers"
+subtitle: "Crea experiencias interactivas con datos📊🚀"
+lang: "es"
+toc: true
+comments: false
+code-copy: true
+format:
+  html:
+    mermaid:
+      theme: forest
+bibliography: references.bib
+---
+
+---
+
+![](../img/shiny_burgers.png)
+
+
+## Estructura Básica de una Aplicación Shiny
+
+Imaginemos que estamos en un restaurante llamado **Shiny Burgers** 🍔. Este lugar, como cualquier buen restaurante, tiene dos áreas principales: el salón principal y la cocina.
+
+El salón principal, donde se atiende a los clientes, es nuestra `UI` (interfaz de usuario). Aquí, los meseros, que representan los `Inputs` y `Outputs`, son los encargados de interactuar directamente con los clientes. Los `Inputs` son los meseros que **reciben las órdenes** de los clientes, como campos de texto, botones y menús desplegables. Estos meseros llevan las órdenes a la cocina.
+
+La cocina es el `server`, el lugar donde se preparan las órdenes. Dentro de la cocina, los `renderers` 👨🏻‍🍳 son los cocineros. Estos cocineros toman las órdenes que les llevan los meseros (Inputs)✍🏻, preparan los alimentos siguiendo recetas y procesos específicos, y una vez que la comida está lista, la entregan a los meseros (Outputs) 💁🏻‍♂️.
+
+Volviendo a nuestra analogía, cuando un cliente llega a **Shiny Burgers**, interactúa con los meseros (Inputs) en el salón principal (UI). El cliente revisa el menú y hace su pedido. Los meseros (Inputs) llevan este pedido a la cocina (server), donde los renderers (cocineros) trabajan en preparar el pedido. Los `renderers` siguen las recetas y procesos necesarios para transformar los ingredientes (datos) en un plato delicioso.
+
+Una vez que la comida está lista, los `renderers` (cocineros) entregan el plato a los meseros (Outputs), quienes se lo llevan de vuelta al cliente en el salón principal (UI). De esta manera, el cliente recibe su pedido preparado.
+
+
+![](../img/meseros.png)
+
+## Primera app
+
+```{r, eval=FALSE}
+
+library(shiny)
+
+ui <- fluidPage(
+  textInput(
+    inputId = "nombre",
+    label = "Ingrese su nombre"
+  ),
+  textOutput(
+    outputId = "saludo"
+  )
+)
+
+server <- function(input, output, session) {
+  
+  output$saludo <- renderText({
+    paste0("Hola",input$nombre, "!")
+  })
+  
+}
+
+shinyApp(ui, server)
+```
+
+
+En este primer ejemplo, tenemos un `textInput`. Eso quiere decir que nuestro usuario va a poder ingresar un texto a la aplicación. Y por otro lado tenemos un `textOutput`, o una salida de texto. Quiere decir que en algún momento de la aplicación, nosotros vamos a mostrarle un texto al usuario.
+
+```{r, eval=FALSE}
+ui <- fluidPage(
+  textInput(
+    inputId = "nombre", # nombre unico para el input
+    label = "Ingrese su nombre"
+  ),
+  textOutput(
+    outputId = "saludo" # nombre unico para el output
+  )
+)
+```
+
+
+Como dijimos antes, todo esto se cocina en el lado del servidor. Es por eso que vemos que el `output`, llamado **saludo**, es en el `server` en donde lo creamos.
+
+Algo importante e indispensable: siempre un `output` va a estar asociado a un tipo específico de `render`. De la misma forma que hay cocineros que son buenos haciendo sushi, otros son buenos haciendo hamburguesas, otros son buenos haciendo sopa. Tenemos `renders` que se especializan para cada uno de los tipos de platos que se pueden preparar, o en este caso los tipos de `outputs` que podemos tener.
+
+```{r, eval=FALSE}
+# usamos renderText porque el output es de tipo Texto
+output$saludo <- renderText({
+    paste0("Hola",input$nombre, "!")
+  })
+```
+
+En este caso, como lo que queremos preparar es un `textOutput`, vamos a llamar a la función especializada, que sería `renderText`. Si ejecutamos este código, vamos a ver que tenemos una pequeña aplicación, que cuando una persona ingresa un texto, en este caso su nombre, la salida que se genera en el `textOutput` es “hola” y el nombre que se ingresó.
+
+## Vamos a practicar🏋🏻‍♀️
+
+1. **Crear un nuevo script de Shiny**: En este script, estableceremos la estructura básica de una aplicación Shiny. No se preocupen por trabajar con dos archivos como les han enseñado; comenzaremos con un solo archivo para simplificar el proceso. No hay ninguna diferencia y será más fácil para todos nosotros.
+
+2.	**Crear una aplicación básica**: La aplicación consistirá en un Numeric Input, donde el usuario podrá ingresar un número, y un Output de tipo texto. En el servidor, tomaremos el número ingresado por el usuario, le sumaremos 7 y lo presentaremos en pantalla a través del Text Output que creamos anteriormente.
+
+3.	**Tiempo estimado**: Disponemos de 5 a 10 minutos para completar este ejercicio. Trabajaremos en grupos.
+
+---
+
+
+## Veamos nuevos Inputs
+
+Tenemos diferentes tipos de inputs. En el siguiente enlace, que es la [Galería Oficial Shiny](https://shiny.posit.co/r/gallery/widgets/widget-gallery/), podrás ver los tipos de inputs y outputs disponibles. Es importante recordar que diferentes tipos de `inputs` requieren diferentes `parámetros`.
+
+Por ejemplo:
+
++ **`Select Input`:** Es ideal para seleccionar entre múltiples categorías. Los parámetros necesarios son:
+    + Label: La etiqueta que se mostrará al usuario.
+    + Choices: Las opciones disponibles para seleccionar.
+    + Selected: La opción que se mostrará por defecto al abrir la aplicación.
++ **`Slider Input`**: Permite seleccionar uno o dos números. Los parámetros necesarios son:
+    + Min: El valor mínimo.
+    + Max: El valor máximo.
+    + Value: El valor o valores seleccionados. Puede ser un único número o un vector con dos números para especificar un rango.
+
+
+```{r, eval=FALSE}
+library(shiny)
+library(datos)
+library(tidyverse)
+
+datos <- pinguinos
+
+ui <- fluidPage(
+  selectInput(
+    inputId = "especie",
+    label = "Seleccione una espacie",
+    choices = c("Adelia",  "Papúa",   "Barbijo"),
+    selected = "Adelia"
+  ),
+  sliderInput(
+    inputId = "anio",
+    label = "Seleccione un año",
+    min = 2007,
+    max = 2009,
+    value = 2008
+  ),
+  plotOutput(
+    outputId = "grafico"
+  )
+)
+
+server <- function(input, output, session) {
+  
+  output$grafico <- renderPlot({
+    
+    df <- datos |> 
+      filter(especie == input$especie, anio == input$anio)
+    
+    ggplot(
+      data = df,
+      mapping = aes(
+        x = alto_pico_mm
+      )
+    ) +
+      geom_histogram(color = "white") +
+      theme_minimal()
+    
+  })
+  
+}
+
+shinyApp(ui, server)
+```
+
+### Interfaz de usuario. (UI)
+
+En nuestra aplicación, primero definimos los inputs y outputs. Un input será la especie del pingüino y el otro será el año de la observación.
+
+Creamos un `selectInput` con los nombres de las especies disponibles en el dataset, permitiendo al usuario elegir una especie específica.
+
+También añadimos un `sliderInput` para seleccionar el año de la observación, con un rango de 2007 a 2009.
+
+Finalmente, definimos un `plotOutput`, inicialmente vacío, donde se mostrará el gráfico generado por la aplicación.
+
+
+```{r, eval=FALSE}
+selectInput(
+    inputId = "especie",
+    label = "Seleccione una espacie",
+    choices = c("Adelia",  "Papúa",   "Barbijo"),
+    selected = "Adelia"
+  ),
+  sliderInput(
+    inputId = "anio",
+    label = "Seleccione un año",
+    min = 2007,
+    max = 2009,
+    value = 2008
+  ),
+  plotOutput(
+    outputId = "grafico"
+  )
+```
+
+### Server
+
+Del lado del servidor, aparece un concepto clave: **la reactividad.**⚡️ Imagina que haces un pedido en un restaurante y luego necesitas modificarlo porque olvidaste mencionar que eres alérgico al tomate.🍅 El mesero corre a la cocina para hacer el cambio.
+
+La reactividad en Shiny funciona de manera similar; automáticamente, cuando los `inputs` cambian, se envían señales al servidor para que vuelva a preparar desde cero lo que se mostrará en los `outputs`. En nuestro caso, necesitamos que la tabla de pingüinos se `filtre` para mostrar solo los pingüinos de la `especie` seleccionada y para el `año seleccionado`. Para hacerlo, llamamos directamente a `input$especie` y `input$anio`.
+
+```{r, eval=FALSE}
+output$grafico <- renderPlot({
+    
+    df <- datos |> 
+      filter(especie == input$especie, anio == input$anio)
+    
+    ggplot(
+      data = df,
+      mapping = aes(
+        x = alto_pico_mm
+      )
+    ) +
+      geom_histogram(color = "white") +
+      theme_minimal()
+    
+  })
+```
+
+
+Es crucial entender que cuando un `render` usa información de los `inputs`, se crea una dependencia entre ellos, y cualquier cambio en un `input` hará que se genere una nueva salida. 
+
+Una vez tenemos esta tabla filtrada, podemos usar `ggplot2` para crear nuestro gráfico de `histograma`. Es importante que la última línea dentro de un `renderPlot` sea la que genera el gráfico, y lo mismo aplica para todos los otros tipos de `renders`.
+
+---
+
+## Vamos a practicar 🏋🏻‍♀️
+
+1.	**Definir la estructura de nuestra app con Shiny:**
+En este script, estableceremos la estructura básica de una aplicación Shiny. No se preocupen por trabajar con dos archivos como les han enseñado; comenzaremos con un solo archivo para simplificar el proceso. No hay ninguna diferencia y será más fácil para todos nosotros.
+
+2.	**Crear los inputs:**
+    + Crear un select input para elegir la especie de pingüino.
+    + Crear un slider input para seleccionar el año de observación (2007-2009).
+    + Crear un slider input para ajustar el tamaño de los puntos en el gráfico.
+
+3.	**Generar un gráfico de dispersión:**
+	•	Filtrar la tabla de pingüinos según la especie y el año seleccionados.
+	•	Generar el gráfico de dispersión utilizando `ggplot2`, mostrando en el eje Y el largo del pico y en el eje X el ancho del pico. Ajustar el tamaño de los puntos según el valor seleccionado.
+
+**Tiempo estimado:** Disponemos de 10 a 15 minutos para completar este ejercicio. Trabajaremos en grupos.⏰
+
+## Layouts
+
+Ahora que tenemos claros los conceptos más básicos de cómo trabajar con Shiny, veamos cómo podemos organizar la interfaz. Las formas en las que distribuimos o repartimos los elementos de la interfaz se suelen denominar como layouts. Hay muchos tipos de layouts y podríamos incluso inventar nuestros propios si lo deseamos. Sin embargo, para los términos de este taller, vamos a utilizar solamente uno, que es probablemente el más simple y también el más utilizado: el `SidebarLayout.`
+
+El `SidebarLayout` nos permite tener, en un lado, normalmente a la izquierda, los controladores o todos los inputs de nuestra aplicación. En el lado derecho, tenemos un panel más grande y principal donde se mostrarán los resultados, como tablas o gráficos.
+
+
+```{r, eval=FALSE}
+library(shiny)
+library(datos)
+library(tidyverse)
+
+datos <- pinguinos
+
+ui <- fluidPage(
+  titlePanel("Análisis de Pingüinos"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(
+        inputId = "especie",
+        label = "Seleccione una especie",
+        choices = c("Adelia", "Papúa", "Barbijo"),
+        selected = "Adelia"
+      ),
+      sliderInput(
+        inputId = "anio",
+        label = "Seleccione un año",
+        min = 2007,
+        max = 2009,
+        value = 2008
+      )
+    ),
+    mainPanel(
+      plotOutput(
+        outputId = "grafico"
+      )
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  
+  output$grafico <- renderPlot({
+    df <- datos |> 
+      filter(especie == input$especie, anio == input$anio)
+    
+    ggplot(
+      data = df,
+      mapping = aes(
+        x = alto_pico_mm
+      )
+    ) +
+      geom_histogram(color = "white") +
+      theme_minimal()
+  })
+  
+}
+
+shinyApp(ui, server)
+```
+
+
+El `SidebarLayout` en Shiny se utiliza para organizar la interfaz de usuario en dos secciones: una barra lateral y un panel principal.
+
++ **SidebarPanel**: Este panel se encuentra dentro del `SidebarLayout` y contiene todos los elementos de control, como los `inputs` de la aplicación (por ejemplo, `selectInput`, `sliderInput`). Es donde el usuario interactúa para ingresar datos o hacer selecciones.
+
++ **MainPanel**: También dentro del `SidebarLayout`, este panel se usa para mostrar los resultados de la aplicación, como gráficos, tablas y otros `outputs`. Es el área principal donde se visualizan los datos procesados.
+
+
+```{r, eval=FALSE}
+ui <- fluidPage(
+  titlePanel("Análisis de Pingüinos"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(
+        inputId = "especie",
+        label = "Seleccione una especie",
+        choices = c("Adelia", "Papúa", "Barbijo"),
+        selected = "Adelia"
+      ),
+      sliderInput(
+        inputId = "anio",
+        label = "Seleccione un año",
+        min = 2007,
+        max = 2009,
+        value = 2008
+      )
+    ),
+    mainPanel(
+      plotOutput(
+        outputId = "grafico"
+      )
+    )
+  )
+)
+```
+
+## Mapa IPS
+
+Ahora que ya podemos crear aplicaciones Shiny simples, vamos a crear una aplicación un poco más grande y compleja. Utilizaremos datos geoespaciales de Costa Rica y nuestro objetivo será que el usuario pueda seleccionar una provincia o varias provincias, y nosotros le mostraremos en un mapa de cantones diferentes indicadores que se utilizan para el cálculo del índice de progreso social en Costa Rica.
+
++ [Descargar datos aquí](https://share.aprendetidyverse.com/s/demo_shiny_geo)
+
+```{r, eval=FALSE}
+library(shiny)
+library(sf)
+library(tidyverse)
+
+mapa <- read_sf("clases/cantones_ips_cr.geojson")
+
+ui <- fluidPage(
+  titlePanel("Análisis de Pingüinos"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(
+        inputId = "provincia",
+        label = "Seleccione una provincia",
+        choices = unique(mapa$provincia),
+        selected =  unique(mapa$provincia)[1]
+      ),
+      selectInput(
+        inputId = "variable",
+        label = "Seleccione una variable",
+        choices = colnames(mapa)[-c(1:5)],
+        selected =  colnames(mapa)[6]
+      )
+    ),
+    mainPanel(
+      plotOutput(
+        outputId = "grafico"
+      )
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  
+  output$grafico <- renderPlot({
+    
+    df <- mapa |> 
+      select(var = input$variable)
+    
+    ggplot(
+      data = df,
+      mapping = aes(
+        fill = var
+      )
+    ) +
+      geom_sf(color = "white") +
+      scale_fill_viridis_c() +
+      theme_minimal()
+    
+  })
+  
+}
+
+shinyApp(ui, server)
+```
+
+---
+
+Muchas gracias a todos por su participación y dedicación durante este taller. Sé que puede ser cansado y a veces frustrante cuando las cosas no salen perfectas a la primera. Pero recuerden, la clave está en la práctica constante. Cuanto más practiquen, más dominarán estas herramientas y técnicas.
+
+## 🤔 Espacio para Preguntas 
+
+Ahora abrimos un espacio de 20 minutos para preguntas y consultas. Tomémonos un minuto para contestar cada pregunta, así podemos cubrir todas sus dudas. Estoy aquí para ayudarles, así que no duden en preguntar lo que necesiten.
+
+Nuevamente, gracias por su esfuerzo y entusiasmo. Estoy aquí para apoyarlos en su aprendizaje. ¡Sigamos aprendiendo juntos!
+
+
+---
+
+> ¿Quieres aprender más y mejorar tus habilidades con datos? 📊 Inscríbete en nuestros cursos en vivo. 🖥️ Nos adaptamos a tu horario con sesiones personalizadas. ⏰ Aprenderás de un instructor cómo sacar el máximo provecho a esta herramienta para trabajar con datos en R. 📈 [Inscríbete aquí](https://aprendetidyverse.com/courses/fundamentos_R.html).
+
+
